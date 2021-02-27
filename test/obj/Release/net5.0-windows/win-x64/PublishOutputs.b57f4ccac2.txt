@@ -1,0 +1,11 @@
+C:\Users\dujo\Desktop\c#\test.net5\test\bin\publish\publish\test.pdb
+C:\Users\dujo\Desktop\c#\test.net5\test\bin\publish\publish\clrcompression.dll
+C:\Users\dujo\Desktop\c#\test.net5\test\bin\publish\publish\clrjit.dll
+C:\Users\dujo\Desktop\c#\test.net5\test\bin\publish\publish\coreclr.dll
+C:\Users\dujo\Desktop\c#\test.net5\test\bin\publish\publish\mscordaccore.dll
+C:\Users\dujo\Desktop\c#\test.net5\test\bin\publish\publish\D3DCompiler_47_cor3.dll
+C:\Users\dujo\Desktop\c#\test.net5\test\bin\publish\publish\PenImc_cor3.dll
+C:\Users\dujo\Desktop\c#\test.net5\test\bin\publish\publish\PresentationNative_cor3.dll
+C:\Users\dujo\Desktop\c#\test.net5\test\bin\publish\publish\vcruntime140_cor3.dll
+C:\Users\dujo\Desktop\c#\test.net5\test\bin\publish\publish\wpfgfx_cor3.dll
+C:\Users\dujo\Desktop\c#\test.net5\test\bin\publish\publish\test.exe
