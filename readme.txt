@@ -6,4 +6,7 @@ Doel: een online link naar de wpf app, die automatich wordt geupdate met een nie
 
 
 1. Maak git repo en push alles naar github.
-2. 
+2. Open map met projectbestand (csproj) en ga naar terminal:
+3. Run: dotnet publish -c release
+4. (of gebruik visual studio)
+5. 
