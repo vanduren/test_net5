@@ -28,8 +28,10 @@ jobs:
       # nu build project (geen restore... dat is net hierboven gedaan)
       - run: dotnet build ${{ env.PROJECT_PATH}} -c Release --no-restore
       # nu publish self-contained met no-build (hierboven net gedaan)
-      - run: dotnet publish ${{ env.PROJECT_PATH}} -c release --self-contained -r win-x64 -p:PublishSingleFile=true --no-build
-      # dotnet publish -c release --self-contained -r win-x64 -p:PublishSingleFile=true
+      # correct: dotnet publish -c release --self-contained -r win-x64 -p:PublishSingleFile=true
+      # krijgen een error (laat de no build eraf)
+      # - run: dotnet publish ${{ env.PROJECT_PATH}} -c release --self-contained -r win-x64 -p:PublishSingleFile=true --no-build
+      - run: dotnet publish ${{ env.PROJECT_PATH}} -c release --self-contained -r win-x64 -p:PublishSingleFile=true
       # maak release waar de files kunnen uploaden (predefined)
       - uses: actions/create-release@v1
         # we gebruiken een id voor deze stap om straks te gebruiken in de release url
