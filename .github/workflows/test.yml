@@ -1,0 +1,31 @@
+name: "test"
+# test zal runnen bij een push van een tag (release)
+# de tag moet er zo uit zien: test/v0.0.1 of test/v1.2.1
+on:
+  push:
+    tags:
+      - "test/v*"
+# environment variabele (wordt verderop nog besproken)
+env:
+  PROJECT_PATH: test/test.csproj
+
+# wat gaan we doen (deploy en stappen)
+jobs:
+  deploy:
+    runs-on: windows-latest
+    steps:
+      # predefined regel voor de checkout de code
+      - uses: actions/checkout@v2
+      # predefined regel voor pre install .net op de machine
+      - uses: actions/setup-dotnet@v1
+        with:
+          # controleer in je project file (test.csproj) de versie van dotnet
+          dotnet-version: 5.0.x
+      # gebruik het juiste pad naar: test/test.csproj
+      # dit gebruik je zo vaak maak er een environment variabele van
+      # dus ipv: -run: dotnet restore test/test.csproj
+      - run: dotnet restore ${{ env.PROJECT_PATH}}
+      # nu build project (geen restore... dat is net hierboven gedaan)
+      - run: dornet build ${{ env.PROJECT_PATH}} -c Release --no-restore
+      # nu publish self-contained met no-build (hierboven net gedaan)
+      - run: dotnet publish ${{ env.PROJECT_PATH}} -c Release --self-contained -r win-x64 -p:PublishSingleFile=true --no-build

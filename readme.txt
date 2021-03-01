@@ -21,6 +21,7 @@ Doel: een online link naar de wpf app, die automatich wordt geupdate met een nie
 
 De github workflow:
 1. Maak map ".git" aan in project met daarin de map "workflows"
-2. Maak in workflows bestand aan (naam maakt niet uit extensie moet "yml" zijn) 
+2. Maak in workflows bestand aan (naam maakt niet uit extensie moet "yml" zijn)
+3. Zie de inhoud en comments van de yml file
 
 
