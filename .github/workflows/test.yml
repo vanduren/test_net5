@@ -50,4 +50,4 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN}}
           # kopieer het pad waar de selfcontained versie (zal) staan en draai even de slashes om
           pattern: test/bin/release/net5.0-windows/win-x64/publish/*.exe
-          release.url: ${{ steps.create_release.outputs.upload_url }}
+          release-url: ${{ steps.create_release.outputs.upload_url }}
