@@ -23,5 +23,11 @@ De github workflow:
 1. Maak map ".git" aan in project met daarin de map "workflows"
 2. Maak in workflows bestand aan (naam maakt niet uit extensie moet "yml" zijn)
 3. Zie de inhoud en comments van de yml file
-
-
+4. Zorg er wel voor dat de yaml op github ligt.
+5. Maak een tag: git tag test/v0.0.1
+6. Push de tag naar github: git push origin test/v0.0.1
+7. Check of de workflow loopt.
+8. Maak een release op github waar de single file kunnen uploaden
+9. Voordat je gaat testen even het bestand (run-time-identifier) test.csproj
+10. Zet daar: <RuntimeIdentifier>win-x64</RuntimeIdentifier> in de propertygroup
+11. Vergeet niet weer git push
