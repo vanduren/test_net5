@@ -2,8 +2,6 @@ C:\Users\dujo\Desktop\c#\test.net5\test\bin\Release\net5.0-windows\win-x64\test.
 C:\Users\dujo\Desktop\c#\test.net5\test\bin\Release\net5.0-windows\win-x64\test.runtimeconfig.json
 C:\Users\dujo\Desktop\c#\test.net5\test\bin\Release\net5.0-windows\win-x64\test.runtimeconfig.dev.json
 C:\Users\dujo\Desktop\c#\test.net5\test\bin\Release\net5.0-windows\win-x64\test.exe
-C:\Users\dujo\Desktop\c#\test.net5\test\bin\Release\net5.0-windows\win-x64\test.dll.manifest
-C:\Users\dujo\Desktop\c#\test.net5\test\bin\Release\net5.0-windows\win-x64\test.application
 C:\Users\dujo\Desktop\c#\test.net5\test\bin\Release\net5.0-windows\win-x64\test.dll
 C:\Users\dujo\Desktop\c#\test.net5\test\bin\Release\net5.0-windows\win-x64\ref\test.dll
 C:\Users\dujo\Desktop\c#\test.net5\test\bin\Release\net5.0-windows\win-x64\test.pdb
@@ -514,9 +512,8 @@ C:\Users\dujo\Desktop\c#\test.net5\test\obj\Release\net5.0-windows\win-x64\test.
 C:\Users\dujo\Desktop\c#\test.net5\test\obj\Release\net5.0-windows\win-x64\test.AssemblyInfo.cs
 C:\Users\dujo\Desktop\c#\test.net5\test\obj\Release\net5.0-windows\win-x64\test.csproj.CoreCompileInputs.cache
 C:\Users\dujo\Desktop\c#\test.net5\test\obj\Release\net5.0-windows\win-x64\test.genruntimeconfig.cache
-C:\Users\dujo\Desktop\c#\test.net5\test\obj\Release\net5.0-windows\win-x64\test.dll.manifest
-C:\Users\dujo\Desktop\c#\test.net5\test\obj\Release\net5.0-windows\win-x64\test.application
 C:\Users\dujo\Desktop\c#\test.net5\test\obj\Release\net5.0-windows\win-x64\test.csproj.CopyComplete
 C:\Users\dujo\Desktop\c#\test.net5\test\obj\Release\net5.0-windows\win-x64\test.dll
 C:\Users\dujo\Desktop\c#\test.net5\test\obj\Release\net5.0-windows\win-x64\ref\test.dll
 C:\Users\dujo\Desktop\c#\test.net5\test\obj\Release\net5.0-windows\win-x64\test.pdb
+C:\Users\dujo\Desktop\c#\test.net5\test\obj\release\net5.0-windows\win-x64\test.csprojAssemblyReference.cache
