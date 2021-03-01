@@ -29,3 +29,22 @@ jobs:
       - run: dotnet build ${{ env.PROJECT_PATH}} -c Release --no-restore
       # nu publish self-contained met no-build (hierboven net gedaan)
       - run: dotnet publish ${{ env.PROJECT_PATH}} -c Release --self-contained -r win-x64 -p:PublishSingleFile=true --no-build
+      # maak release waar de files kunnen uploaden (predefined)
+      - uses: actions/create-release@v1
+          # we gebruiken een id voor deze stap om straks te gebruiken in de release url
+          # anders weten we niet hoe we de stap kunnen benaderen
+          id: create_release
+          env:
+            # De token zit al in de environment variabele
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+          with:
+            # de github ref is de test/v*
+              tag_name: ${{ github.ref }}
+              release_name: ${{ github.ref }}
+      # upload commando voor de files
+      - uses: csexton/release-asset-action@v2
+            with:
+                github-token: ${{ secrets.GITHUB_TOKEN}}
+                # kopieer het pad waar de selfcontained versie (zal) staan en draai even de slashes om
+                pattern: test/bin/release/net5.0-windows/win-x64/publish/*.exe
+                re;ease.url: ${{ steps.create_release.outputs.upload_url }}
